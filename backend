@@ -1,0 +1,75 @@
+from flask import Flask, render_template, request
+import json
+
+app = Flask(__name__)
+
+# Load dataset once when app starts
+with open("data.json", "r", encoding="utf-8") as f:
+    dataset = json.load(f)
+
+# Custom function to get recommendations from dataset
+def generate_recommendation(dietary_preferences, fitness_goals, lifestyle_factors, dietary_restrictions, health_conditions, user_query):
+    try:
+        # Use nested .get() to safely access each level
+        data = dataset.get(dietary_preferences.lower(), {}) \
+                      .get(fitness_goals.lower(), {}) \
+                      .get(lifestyle_factors.lower(), {}) \
+                      .get(dietary_restrictions.lower(), {}) \
+                      .get(health_conditions.lower(), {})
+
+        if data:
+            return {
+                "diet_types": data.get("diet_types", []),
+                "workouts": data.get("workouts", []),
+                "breakfasts": data.get("breakfasts", []),
+                "dinners": data.get("dinners", []),
+                "additional_tips": data.get("additional_tips", [])
+            }
+        else:
+            # If no match found
+            return {
+                "diet_types": ["No match found in dataset. Please try another combination."],
+                "workouts": ["No match found in dataset. Please try another combination."],
+                "breakfasts": ["No match found in dataset. Please try another combination."],
+                "dinners": ["No match found in dataset. Please try another combination."],
+                "additional_tips": ["No match found in dataset. Please try another combination."]
+            }
+
+    except Exception as e:
+        print("Error while fetching recommendation:", e)
+        return {
+            "diet_types": ["Error occurred while fetching data."],
+            "workouts": ["Error occurred while fetching data."],
+            "breakfasts": ["Error occurred while fetching data."],
+            "dinners": ["Error occurred while fetching data."],
+            "additional_tips": ["Error occurred while fetching data."]
+        }
+
+@app.route("/")
+def index():
+    return render_template("index.html", recommendations=None)
+
+@app.route("/recommendations", methods=["POST"])
+def recommendations():
+    if request.method == "POST":
+        dietary_preferences = request.form.get("dietary_preferences", "")
+        fitness_goals = request.form.get("fitness_goals", "")
+        lifestyle_factors = request.form.get("lifestyle_factors", "")
+        dietary_restrictions = request.form.get("dietary_restrictions", "")
+        health_conditions = request.form.get("health_conditions", "")
+        user_query = request.form.get("user_query", "")
+
+        # Generate recommendations
+        recommendations = generate_recommendation(
+            dietary_preferences,
+            fitness_goals,
+            lifestyle_factors,
+            dietary_restrictions,
+            health_conditions,
+            user_query
+        )
+
+        return render_template("index.html", recommendations=recommendations)
+
+if __name__ == "__main__":
+    app.run(debug=True)

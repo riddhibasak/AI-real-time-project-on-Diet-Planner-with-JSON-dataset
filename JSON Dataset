@@ -1,0 +1,207 @@
+{
+  "vegetarian": {
+    "weight loss": {
+      "sedentary": {
+        "gluten-free": {
+          "diabetes": {
+            "diet_types": [
+              "Low-glycemic gluten-free vegetarian diet",
+              "High-fiber low-carb plan",
+              "Vegetable and legume-based diet",
+              "Portion-controlled diabetic-friendly meals",
+              "Mediterranean vegetarian (gluten-free)"
+            ],
+            "workouts": [
+              "Brisk walking (20–30 mins daily)",
+              "Gentle yoga for blood sugar control",
+              "Light stretching",
+              "Beginner resistance band exercises",
+              "Desk mobility exercises"
+            ],
+            "breakfasts": [
+              "Gluten-free oats with chia and berries",
+              "Vegetable smoothie with almond milk",
+              "Besan chilla (gram flour pancakes) with salad",
+              "Boiled eggs or tofu with steamed veggies",
+              "Sprouts salad with lemon and herbs"
+            ],
+            "dinners": [
+              "Quinoa khichdi with vegetables",
+              "Lentil soup with sautéed greens",
+              "Grilled paneer with brown rice and salad",
+              "Vegetable stew with gluten-free bread",
+              "Mixed salad with chickpeas and olive oil"
+            ],
+            "additional_tips": [
+              "Avoid refined sugar and white flour completely",
+              "Eat small, frequent meals to control glucose spikes",
+              "Monitor portion sizes closely",
+              "Drink plenty of water and include green tea",
+              "Get regular health check-ups and maintain sleep hygiene"
+            ]
+          },
+          "hypertension": {
+            "diet_types": [
+              "Low-sodium vegetarian diet",
+              "DASH-inspired plant-based diet",
+              "High-potassium low-fat meals",
+              "Gluten-free heart-friendly plan",
+              "Whole-food vegetarian diet"
+            ],
+            "workouts": [
+              "Walking or cycling 30 mins daily",
+              "Gentle stretching and breathing exercises",
+              "Yoga for blood pressure management",
+              "Tai Chi or low-impact aerobics",
+              "Light resistance training"
+            ],
+            "breakfasts": [
+              "Oatmeal with flaxseeds and fruits",
+              "Vegetable smoothie with spinach and banana",
+              "Upma with low salt",
+              "Greek yogurt with nuts",
+              "Fruit bowl with chia seeds"
+            ],
+            "dinners": [
+              "Vegetable soup with quinoa",
+              "Steamed vegetables with lentils",
+              "Brown rice with low-sodium curry",
+              "Paneer and mixed greens salad",
+              "Grilled tofu with sautéed beans"
+            ],
+            "additional_tips": [
+              "Limit salt and processed foods",
+              "Eat more potassium-rich foods like bananas and spinach",
+              "Reduce caffeine and alcohol intake",
+              "Sleep at least 7 hours",
+              "Engage in daily stress-relief activities"
+            ]
+          }
+        },
+        "lactose-intolerant": {
+          "cholesterol": {
+            "diet_types": [
+              "Low-fat dairy-free vegetarian plan",
+              "Fiber-rich cholesterol-lowering meals",
+              "Heart-healthy soy-based diet",
+              "Low-carb plant-based meals",
+              "Olive oil and nuts-based diet"
+            ],
+            "workouts": [
+              "Brisk walking",
+              "Light jogging",
+              "Yoga and breathing exercises",
+              "Cycling (moderate)",
+              "Resistance band workout"
+            ],
+            "breakfasts": [
+              "Almond milk smoothie with oats",
+              "Tofu scramble with vegetables",
+              "Fruits with chia and flaxseeds",
+              "Oats with coconut milk",
+              "Besan chilla with salad"
+            ],
+            "dinners": [
+              "Quinoa and lentil salad",
+              "Vegetable stir fry with tofu",
+              "Grilled vegetables with olive oil",
+              "Brown rice with dal and sautéed spinach",
+              "Vegetable soup with multigrain toast"
+            ],
+            "additional_tips": [
+              "Avoid full-fat dairy and butter",
+              "Include flaxseed and chia for good fats",
+              "Limit fried foods and baked goods",
+              "Cook with olive or sunflower oil",
+              "Do light exercise after dinner"
+            ]
+          }
+        }
+      },
+      "moderately-active": {
+        "vegan": {
+          "diabetes": {
+            "diet_types": [
+              "Low-glycemic vegan meal plan",
+              "High-protein soy-based diet",
+              "Vegetable and lentil-rich plan",
+              "Vegan Mediterranean-style diet",
+              "Balanced plant-based low-carb meals"
+            ],
+            "workouts": [
+              "Power yoga",
+              "Cycling 30 mins/day",
+              "Moderate strength training",
+              "HIIT for beginners",
+              "Brisk walking after meals"
+            ],
+            "breakfasts": [
+              "Vegan protein smoothie with flaxseeds",
+              "Tofu scramble with greens",
+              "Oats with almond milk",
+              "Chia pudding with fruits",
+              "Smoothie bowl with nuts"
+            ],
+            "dinners": [
+              "Lentil soup with quinoa",
+              "Grilled tofu and vegetable stir-fry",
+              "Vegan curry with brown rice",
+              "Stuffed bell peppers with lentils",
+              "Chickpea and kale salad"
+            ],
+            "additional_tips": [
+              "Avoid refined grains and added sugars",
+              "Add cinnamon to meals to stabilize sugar",
+              "Stay hydrated with herbal tea",
+              "Sleep well for insulin regulation",
+              "Add short walks after meals"
+            ]
+          }
+        },
+        "gluten-free": {
+          "cholesterol": {
+            "diet_types": [
+              "Low-fat gluten-free vegetarian plan",
+              "Plant-based high-fiber meals",
+              "Cholesterol-lowering quinoa diet",
+              "Balanced heart-healthy plan",
+              "Soy and flaxseed-based diet"
+            ],
+            "workouts": [
+              "Brisk walking",
+              "Cycling (moderate)",
+              "Yoga for relaxation",
+              "Aerobics for 20–30 mins",
+              "Stretching and mobility"
+            ],
+            "breakfasts": [
+              "Gluten-free oats with almond milk",
+              "Fruit smoothie with chia seeds",
+              "Tofu sandwich on gluten-free bread",
+              "Vegetable poha (no wheat)",
+              "Greek yogurt with nuts"
+            ],
+            "dinners": [
+              "Vegetable soup with lentils",
+              "Grilled tofu with quinoa",
+              "Paneer curry with brown rice",
+              "Mixed salad with beans",
+              "Vegetable khichdi"
+            ],
+            "additional_tips": [
+              "Avoid fried snacks and ghee",
+              "Use olive oil for cooking",
+              "Eat more soluble fiber (oats, legumes)",
+              "Avoid overeating at night",
+              "Track lipid levels regularly"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
